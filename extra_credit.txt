@@ -1,0 +1,8 @@
+Analyzing the Order of Growth
+
+The recurrence relation for my code is T(n) = 4T(n/4) + 4n
+    since a problem of size n is being divided into 4 instances each of size n/4 with 4 of them needing to be solved.
+    And it takes 4n to linearly divide the problem into smaller problems and combine their solutions at size n.
+
+Hence, referring to the master theorem a = b^d, i.e., 4=4^1,
+T(n) is O(nlogn).
